@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    padding: 10px; /*para los 4 lados */
+    margin-bottom: 50px;  /*abajo en relación al siguiente elemento*/
+    background-color: #d61010;
+    border: 10px solid #ccc0cc; /*el border se pone despues del padding*/
+}
+
+/* Estilos sólo para header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: rgb(20, 172, 96);
+    font-size:30px;
+}
+
+/*Todos los elementos ul que están dentro de un elemento nav*/
+nav ul {
+    list-style-type: none; /*quitar los estilos de lista 
+                           predeterminados en elementos <ul>*/
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /*hará que se muestren en una línea horizontal,
+                     uno al lado del otro, en lugar de en
+                      una lista vertical.*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para los artículos */
+article {
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: #0d5b9b;
+}
+
+article p {
+    color: #5fc524;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    color: #a8156b;
+    font-size: 15px;
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web APIs</title>
+    <link rel="shortcut icon" href="../IMG/logo-menu.ico">
+    <link  rel="stylesheet" type="text/css" href="../CSS/tecnologiasWEB.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .indice{
+    width: 270px;
+    background-color: rgb(41, 121, 240);;
+    padding: 20px;
+    float: left;
+    text-align: justify;
+
+}
+
+pre{
+  text-align: justify;
+}
+  </style>
+</head>
+
+<body style="background-color: rgb(41, 121, 240);" >
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <img src="../IMG/logo-menu.ico" height="50px">
+      <a class="navbar-brand" href="../Examen_Parcial2/Menu.html">DESARROLLO WEB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../Examen_Parcial2/Microservicios.html">microservicios</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../Examen_Parcial2/API.html" role="button" data-bs-toggle="dropdown">Desarrollo web API</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Examen_Parcial2/API.html">Proceso</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/API.html">Recomendaciones</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../Examen_Parcial2/Contenedores.html">Manejo de Contenedores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aplicaciones en la Nube</a>
+          </li>  
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../Examen_Parcial2/ASP.NET.html" role="button" data-bs-toggle="dropdown">Aplicaciones web ASP.NET </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">Web Froms</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">WCF</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">MVC</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">Web API</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">SignalR</a></li>
+              <li><a class="dropdown-item" href="../Examen_Parcial2/ASP.NET.html">ASP.NET Core</a></li>
+            </ul> 
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify;">
+      <h2>Definición de una API</h2>
+    </div>
+
+    <div class="indice">
+      <h2 style="color: aliceblue;">Indice</h2>
+    <strong >
+      <a href="#HTTP" style="color: aliceblue;">* HTTP</a><br />
+      <a href="#SOAP" style="color: aliceblue;">* SOAP</a><br />
+      <a href="#REST" style="color: aliceblue;">* REST</a><br />
+      <a href="#JWT" style="color: aliceblue;">* JWT</a><br />
+    </strong>
+    </div>
+
+        
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify;">  
+            <pre style="text-align: justify;">
+            Mecanismos que permiten a dos componentes de software comunicarse
+            entre sí mediante un conjunto de definiciones y protocolos. (Amazon, 2023)
+
+            Una API (interfaz de programación de aplicaciones), es un conjunto de
+            reglas definidas que permiten que diferentes aplicaciones se comuniquen
+            entre sí. Actúa como una capa intermedia que procesa las transferencias
+            de datos entre sistemas, permitiendo a las empresas abrir sus datos y
+            funcionalidades de aplicaciones a desarrolladores externos, socios
+            comerciales y departamentos internos dentro de sus empresas. (IBM,
+            2023).
+            </pre>
+    </div>
+
+        <div class="container p-5 my-5 bg-dark text-white">
+        <h2> Ejemplos de APIs:</h2>
+      </div>
+        <div class="container p-5 my-5 bg-dark text-white">
+            <ul>
+            <li> API de Google: Búsqueda, Gmail, Traductor o Maps.</li>
+            <li> Paypal</li>
+            <li>Incrustración de Videos de Youtube</li>
+            <li> WhatsApp Business</li>
+            <li> Instagram, Facebook</li>
+        </ul>
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <h2 id="HTTP">HTTP (Hypertext Transfer Proto) </h2>
+      </div>
+        <div class="container p-5 my-5 bg-dark text-white"> 
+        <pre>
+          Significa Protocolo de Transferencia de Hipertexto (en inglés, Hypertext Transfer Protocol). 
+          Es un protocolo de comunicación utilizado para la transferencia de datos en la World Wide Web. 
+          Es el protocolo base para la comunicación de datos en la web, y se utiliza para la transmisión 
+          de recursos como HTML, imágenes, videos, etc., entre un servidor y un cliente, generalmente un 
+          navegador web
+
+          Opera en un modelo cliente-servidor, donde un cliente (como un navegador web) envía una solicitud
+          HTTP a un servidor, y el servidor responde con los datos solicitados, como una página web. Es un
+          protocolo sin estado, lo que significa que no guarda información sobre las solicitudes anteriores, 
+          lo que hace que cada solicitud sea independiente de las demás.
+
+        </pre>
+
+        <h3 >URI - HTTP</h3>
+        <pre>
+          Es un Identificador de recursos uniformes que sirve para identificar y 
+          localizar la ubicación de un recurso 
+          <h3>Clases de URI</h3>
+          URL: Identifica un recurso indicando donde esta y como alcanzarlo
+          URN: Identifica un recurso mediante su nombre
+          <h3>SINTAXIS DE UNA URI: </h3>
+          Nombre_de_esquema: parte_jerarquica [? Consulta] [#Fragmento]
+        </pre>
+
+
+        <h3>TIPOS DE HTTP</h3>
+        <table border="4px" cellspacing="10px" cellpadding="10px">
+          <tr>
+            <th>HTTP REPONSE</th>
+            <th>HTTP REQUEST</th>
+          </tr>
+
+          <tbody>
+          <tr>
+            <td>
+              Es la información que un servidor envía de vuelta a un cliente en respuesta 
+              a una solicitud HTTP. Cuando un cliente, como un navegador web, envía una 
+              solicitud HTTP a un servidor para acceder a un recurso, como una página web 
+              o un archivo, el servidor procesa la solicitud y envía una respuesta al cliente.
+            </td>
+            <td>
+              es un mensaje enviado por un cliente, como un navegador web, a un servidor para 
+              solicitar la recuperación o el envío de recursos. Cuando un usuario ingresa una 
+              URL en su navegador o hace clic en un enlace, el navegador crea una solicitud HTTP 
+              y la envía al servidor correspondiente para obtener la página web u otro recurso 
+              asociado con esa URL.
+            </td>
+          </tr>
+          <tr>            
+          </tr>
+          </tbody>
+        </table>
+
+        <pre>
+        <h3> PARTES DE HTTP RESPONSE</h3>                
+    * <i style="color: red;">Línea de estado</i>: Esta línea contiene un código de estado que indica si la solicitud se procesó 
+      correctamente o si ocurrió algún error. 
+
+    * <i style="color: red;">Encabezados (headers)</i>: Los encabezados contienen información adicional sobre la respuesta, 
+      como la fecha y hora en que se generó la respuesta, el tipo de contenido devuelto, la longitud 
+      del contenido y la configuración de caché.
+
+    * <i style="color: red;">Cuerpo de la respuesta (body)</i>: El cuerpo de la respuesta contiene los datos reales que el 
+      servidor envía de vuelta al cliente. Esto puede ser HTML para una página web, datos JSON 
+      para una API, una imagen, un archivo de descarga, u otro tipo de contenido
+    </pre>
+
+    <h3>Codigo respuesta de HTTP REPONSE</h3>
+    <pre>
+      Le indica al cliente (p.e navegador) como interpretar la respuesta:
+1XX: INFORMACION 
+2XX: ÉXITO
+3XX: REDIRECCION
+4XX: ERROR DEL CLIENTE
+5XX: ERROR DEL SERVIDOR
+         <h4>Significado de Errores de repuesta de HTTP RESPONSE</h4>
+200 – ok: Existoso. El servidor envía el recurso solicitado en el cuerpo del mensaje
+204 – not contebt: Existoso. El mensaje no tiene cuerpo
+301 – moved permamently: Redireccion. El recurso se ha movido permanentemente  otra URL
+302 - found
+404 – not found
+401 - inauthorized
+500 – internal server error
+503- service unavailable
+    </pre>
+
+    <hr>
+
+    <h3>PARTES DE HTTP REQUEST</h3>
+    <pre>
+      <i style="color: blue;">Línea de solicitud (Request line)</i>: Esta línea contiene tres partes: el método HTTP, la URL 
+      del recurso solicitado y la versión del protocolo HTTP que se está utilizando. 
+      
+      <i style="color: blue;">Encabezados (Headers)</i>: Los encabezados contienen información adicional sobre la solicitud, 
+      como el tipo de navegador del cliente, los tipos de contenido que el cliente acepta, cookies, etc.
+      
+      <i style="color: blue;">Cuerpo de la solicitud (Request body)</i>: Opcionalmente, algunas solicitudes pueden incluir un cuerpo 
+      que contiene datos adicionales que el cliente quiere enviar al servidor. Por ejemplo, en una solicitud 
+      POST que envía datos de un formulario HTML, el cuerpo de la solicitud contendrá esos datos
+
+      <h4>METODOS PRINCIPALES DE HTTP REQUEST</h4>
+      GET: solicita un recurso 
+      HOST: crea un recurso
+      PUT: reemplaza un recurso
+      DELETE: elimina un recurso
+      PATCH
+      HEAD
+      OPTIONS
+    </pre>
+    <hr>
+
+    <h3 style="text-align: center;"> ESTRUCTURA DE HTTP DE REQUEST Y RESPONSE</h3>
+    <div class="text-center">
+    <img src="../IMG/req y res.png" >
+  </div>
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <H2 id="SOAP">SOAP</H2>
+      </div>
+      <div class="container p-5 my-5 bg-dark text-white">
+        <pre>
+        SOAP (Simple Object Access Protocol) es un protocolo de comunicación utilizado para intercambiar información
+        estructurada en la implementación de servicios web. Fue desarrollado para facilitar la comunicación entre sistemas        
+        distribuidos a través de la web
+
+        es un protocolo de comunicación basado en XML (Extensible Markup Language) que permite que
+        aplicaciones en diferentes plataformas se comuniquen entre sí de manera independiente del lenguaje de
+        programación y el sistema operativo utilizados. Su nombre,"Simple Object Access Protocol", enfatiza 
+        su simplicidad y su capacidad para acceder a objetos en sistemas remotos a través de la web
+
+        <h3>Características de SOAP</h3>
+          <strong>Las principales características de SOAP incluyen:</strong>
+          <ol start="1">
+          <li><i style="color: blueviolet;">Basado en XML</i>: SOAP utiliza XML como su formato de mensaje, lo que lo hace legible y 
+          comprensible tanto para humanos como para máquinas.
+          </li>
+          <li><i style="color: blueviolet;">Protocolo independiente</i>: SOAP no está vinculado a ningún protocolo de transporte específico, 
+          lo que significa que puede utilizarse con una variedad de protocolos, como HTTP, SMTP y más.</li>
+
+          <li><i style="color: blueviolet;">Plataforma independiente</i>: SOAP es independiente de la plataforma y el lenguaje de programación, 
+          lo que permite la interoperabilidad entre sistemas heterogéneos.</li>
+
+          <li><i style="color: blueviolet;">Lenguaje neutro</i>: SOAP no favorece ningún lenguaje de programación en particular y se puede utilizar 
+          con cualquier lenguaje que admita la creación y el análisis de mensajes XML</li>
+
+          <li><i style="color: blueviolet;">Extensibilidad</i>: SOAP permite la inclusión de información adicional en los mensajes, lo que lo hace altamente
+            extensible y adaptable a diferentes necesidades.</li>
+        </ol>
+
+        <h3>Usabilidad de SOAP</h3>
+        SOAP se utiliza en una variedad de aplicaciones y escenarios, como:
+
+        <i style="color: deeppink;">Servicios Web</i>: SOAP es un componente fundamental de los servicios web, donde se utiliza para la comunicación
+        entre aplicaciones a través de la web.
+        
+        <i style="color: deeppink;">Integración de sistemas</i>: Se utiliza para integrar sistemas heterogéneos, permitiendo que aplicaciones desarrolladas
+        en diferentes lenguajes y plataformas se comuniquen de manera efectiva.
+
+        <i style="color: deeppink;">Comunicación entre aplicaciones empresariales</i>: Las organizaciones utilizan SOAP para la comunicación entre
+        aplicaciones empresariales críticas, lo que facilita la automatización de procesos y la transferencia segura de
+        datos
+
+
+        <h3>Funcionamiento de SOAP</h3>
+        El funcionamiento de SOAP implica la creación, envío y recepción de mensajes SOAP. Un mensaje SOAP consta de
+        un sobre (encabezado) y un cuerpo. El sobre contiene información sobre la estructura y el procesamiento del
+        mensaje, mientras que el cuerpo contiene los datos a transmitir.
+        
+        Cuando una aplicación envía una solicitud SOAP a un servicio web, el mensaje se envía al servidor web que aloja
+        el servicio. El servidor procesa la solicitud, realiza la operación especificada y devuelve una respuesta en forma
+        de otro mensaje SOAP. Esta respuesta se puede analizar y procesar en la aplicación cliente
+      <div class="text-center">
+        <img src="../IMG/EsquemaSOAP.jpg"  width="700px" height="300px">
+      </div>
+
+        </pre>        
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <h2 id="REST">REST</h2>
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <pre>
+          Es una logica de Recomendaciones y rectricciones bajo la cual se puede construir una API
+          y nos sirve para obtener y generar datos y operaciones, devolviendo esos datos en formatos 
+          muy específicos, como XML y JSON.
+
+          REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con ellos se 
+          puede hacer GET, POST, PUT y DELETE. De aquí surge una alternativa a SOAP. REST llega a 
+          solucionar esa complejidad que añadía SOAP, haciendo mucho más fácil el desarrollo de una
+          API REST, en este caso de un servicio en el cual nosotros vamos a almacenar nuestra lógica 
+          de negocio y vamos servir los datos con una serie de recursos URL y una serie de datos que 
+          nosotros los limitaremos, es decir, será nuestro BACKEND nuestra lógica pura de negocios 
+          que nosotros vamos a utilizar.
+
+          <h2>API RESTful</h2>
+          Una API RESTful (Application Programming Interface Representational State Transfer) es una 
+          interfaz de programación de aplicaciones que sigue los principios del estilo arquitectónico REST. 
+          Esto significa que la API está diseñada para aprovechar las características y restricciones de REST, 
+          como el uso de recursos, métodos HTTP y representaciones de datos.
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JD6VNRdGl98?si=N0nVoNcoiyxuzpzC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </pre>
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <h2 id="JWT">JWT</h2>
+      </div>
+
+      <div class="container p-5 my-5 bg-dark text-white">
+        <pre>
+        Un JWT es un estándar para la autenticación y el intercambio de información definido por RFC7519.
+        Es posible almacenar objetos JSON de forma segura y compacta. Este token es un códigoBase64 y se 
+        puede firmar con un par de claves secretas o privadas/públicas. Si un JWT está firmado por un par 
+        de claves pública/privada, la empresa certifica que la parte que tiene la clave privada está 
+        realmente firmada
+
+        <h3>UTILIZACIÓN</h3>
+        Se puede utilizar, por ejemplo, en un escenario de autorización. Una vez que el usuario haya iniciado sesión, puede
+        ver cada solicitud y verificar que incluye el JWT, lo que le permite acceder a rutas, servicios y otros recursos
+        <img src="../IMG/JWT 1.png" width="700px">
+
+        <h3>ESPECIFICACIONES JWT</h3>
+        JWT es parte de esta familia de especificaciones y representa el token. A continuación, puedes ver otras especificaciones 
+        de esta familia: 
+
+        * <i style="color: lawngreen;">JWT (JSON Web Tokens)</i>: representa el propio token; 
+        * <i style="color: lawngreen;">JWS (JSON Web Signature)</i>: representa la firma del token; 
+        * <i style="color: lawngreen;">JWE (JSON Web Encryption)</i>: representa la firma para el cifrado de tokens; 
+        * <i style="color: lawngreen;">JWK (JSON Web Keys)</i>: representa las claves para la firma; 
+        * <i style="color: lawngreen;">JWA (JSON Web Algorithms)</i>: representa los algoritmos para firmar el token;
+
+        <h2>ESTRUCTURA</h2>
+        Un JWT tiene una estructura básica compuesta por encabezado, carga útil y firma. Estas tres
+        partes están separadas por puntos ( . ). De esta forma quedaría algo así como:
+        header.payload.signature. <strong><i style="color: crimson;">¡Comprendamos mejor cada una de estas partes!</i></strong>
+
+        <h3 style="color: chocolate;">Header</h3>
+        Headers son los encabezados del token donde
+        pasamos básicamente dos piezas de información: el
+        alg que informa qué algoritmo se usa para crear la
+        firma y el typ que indica el tipo de token.
+        <strong>{
+        "alg": "HS256",
+        "typ": "JWT"
+        }</strong>
+
+        <h3 style="color: chocolate;">Payload</h3>
+        El payload es el componente donde podemos
+        encontrar datos de autenticación como contraseñas y
+        correos electrónicos, por ejemplo:
+        <strong>{
+        "email" : "nombre@alura.com.br"
+        "password" : "HuEKW489!j445*"
+        }</strong>
+
+        <h3 style="color: chocolate;">Signature </h3>
+        La firma del token (firma) está compuesta por la 
+        codificación del encabezado y el payload más una 
+        clave secreta y es generada por el algoritmo 
+        especificado en el encabezado
+
+        <strong>HS256SHA256(
+        base64UrlEncode(header) + "." +
+        base64UrlEncode(payload), secret_key)</strong>
+
+        El resultado son tres cadenas separadas por puntos
+        que se pueden usar fácilmente en entornos HTML y
+        protocolos HTTP.
+      <strong>
+        * eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+        * eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ikpva G4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.
+        * SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_ad Qssw5
+      </strong>
+      </pre>
+      </div>
+
+</body>
+</html>

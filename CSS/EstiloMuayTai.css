@@ -1,0 +1,57 @@
+body {    
+    padding: 2%;
+    border: 10px solid black;
+}
+
+
+*{
+    font-family: cursive;
+}
+
+.tai1 {
+    float: left;
+    margin-right: 100px;
+
+}
+
+h2{
+    padding: 2%;
+    text-align: justify;
+    background-color: beige;
+    border: 2px solid black;
+    
+}
+
+pre{
+    padding: 2%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 1000%;
+}
+
+.carousel-inner{
+ height: 400px;
+}
+
+.d-block{
+    height: 500px;
+}
+
+audio{
+    width:  50%;
+    
+}
+
+.img1{
+    width: 600px;
+    padding: 15px;
+    float: left;
+}
+
+.img2{
+    width: 500px;
+    padding: 15px;
+    float: left;
+}

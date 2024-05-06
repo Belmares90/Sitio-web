@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="application/javascript">
+       function graf() {
+        var c = document.getElementById("myCanvas");
+        var o = c.getContext("2d");
+
+        o.fillStyle = "blue";
+        o.fillRect(-50, 10, 200, 50); <!--x,y,ancho,alto--> 
+
+        o.globalAlpha = 0.7;
+        o.fillStyle = "blue"; 
+        o.fillRect(-50, 60, 300, 50); 
+        o.globalAlpha = 1,1
+        o.fillStyle = "yellow"; 
+        o.fillRect(-50, 110, 130, 50);
+        o.globalAlpha = -0.9;
+        o.fillStyle = "orange";
+        o.fillRect(-50, 160, 160, 50);        
+        o.fillStyle = "green";
+        o.fillRect(-50, 210, 210, 50);
+       }        
+    </script>
+</head>
+<body onload="graf();">    
+    <h1> Graficos </h1>
+    <canvas id="myCanvas" width="700" height="700">
+        no se pudo realizar el grafico
+    </canvas>
+</body>
+</html>

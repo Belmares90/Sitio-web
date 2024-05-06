@@ -1,0 +1,44 @@
+table{
+    text-align: center;
+}
+
+body{
+    padding: 6%;
+    border: 3% solid black;
+    background-color: bisque;   
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+    background-color: burlywood;
+}
+
+.titulo{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+tr :hover{
+    background-color: rgb(194, 23, 10);
+    border-bottom: 1px solid beige;
+    
+
+}
+
+table{
+    border-bottom: 3% solid;
+    border: 10% solid;
+}
+
+h2{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+ 

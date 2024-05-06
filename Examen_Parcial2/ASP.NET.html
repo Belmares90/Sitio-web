@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías para desarrollo de aplicaciones web en
+        ASP.NET</title>
+        <link rel="shortcut icon" href="../IMG/logo-menu.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      
+    .indice{
+    width: 270px;
+    background-color: rgb(41, 121, 240);
+    padding: 20px;
+    float: left;
+    text-align: justify;
+    font-size: 15px;
+
+}
+    </style>
+</head>
+<body style="background-color: rgb(41, 121, 240) ;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <img src="../IMG/logo-menu.ico" height="50px">
+          <a class="navbar-brand" href="../Examen_Parcial2/Menu.html">DESARROLLO WEB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TecnologiasWeb APIS</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/tecnologiasWeb.html">HTTP</a></li>
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/tecnologiasWeb.html">SOAP</a></li>
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/tecnologiasWeb.html">REST</a></li>
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/tecnologiasWeb.html">JWT</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../Examen_Parcial2/Microservicios.html">microservicios</a>
+              </li>
+    
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../Examen_Parcial2/API.html" role="button" data-bs-toggle="dropdown">Desarrollo web API</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/API.html">Proceso</a></li>
+                  <li><a class="dropdown-item" href="../Examen_Parcial2/API.html">Recomendaciones</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="../Examen_Parcial2/Contenedores.html">Manejo de Contenedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Examen_Parcial2/AplicNube.html">Aplicaciones en la Nube</a>
+              </li>  
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify;">
+    <h1 style="text-align: center;">Tecnologías para desarrollo de aplicaciones web en
+        ASP.NET</h1>
+    </div>
+    <div class="indice">
+      <strong style="color: rgb(255, 0, 0);">
+        <h2>Indice</h2>
+        <a href="#web" style="color: black;">* Web Forms</a><br />
+        <a href="#wfc" style="color: black;">* WFC</a><br />
+        <a href="#mvc" style="color: black;">* MVC</a><br />
+        <a href="#api" style="color: black;">* Web API</a><br />
+        <a href="#signalr" style="color: black;">* SignalR</a><br />
+        <a href="#core" style="color: black;">* ASP.NET core</a><br />
+      </strong>
+    </div>
+  
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify;">
+    <h2 id="web">Web Forms</h2>    
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <img src="../IMG/ASP 1.jpg" style="float: left;" width="430px" height="300px">
+        Son páginas que los usuarios solicitan mediante su
+        explorador.  Estas páginas se pueden escribir con
+        una combinación de HTML, script de cliente, contro-
+        les de servidor y código de servidor
+
+        Cuando los usuarios solicitan una página, el marco 
+        se compila y ejecuta en el servidor y luego el marco 
+        genera el marcado HTML que el explorador puede repr-
+        esenta.
+    </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      Se basa en la tecnología de Microsoft ASP.NET, en la que el código que se ejecuta en el
+      servidor genera dinámicamente la salida de la página web en el explorador o el disposit-
+      ivo cliente.
+
+      <h3>Compatibilidad</h3>
+      Es compatible con cualquier explorador o dispositivo móvil. Una página web de
+      ASP.NET representa automáticamente el código HTML compatible con el explorador 
+      correcto para características como estilos, diseño
+      <div style="text-align: center;">
+      <img src="../IMG/ASP 4.jpg">
+      </div>
+      <h3>Lenguaje</h3>
+      Se admite con cualquier lenguaje compatible con Common Language
+      Runtime de .NET, como Microsoft Visual Basic y Microsoft Visual C#
+      <div style="text-align: center;">
+      <img src="../IMG/ASP 2.jpg" height="200px" width="400px"><img src="../IMG/ASP 3.jpg" height="200px" width="400px">
+    </div>
+
+      <h3>Origen</h3>
+      Se basa en Microsoft .NET Framework. Esto proporciona todas las ventajas del
+      marco, incluido un entorno administrado, seguridad de tipos y herencia. Es f-
+      lexible porque puede agregar en ellos controles creados por el usuario y de 
+      terceros
+      <div style="text-align: center;">
+      <img src="../IMG/ASP 5.jpg" height="400px">
+      </div>
+    </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2>Caracteristicas Principales de Web Forms</h2>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <ol>
+      <li>Separación de HTML y otro código de interfaz de usuario de la lógica de la aplicación</li>
+
+      <li>Amplio conjunto de controles de servidor para tareas comunes, incluido acceso a datos</li>
+
+      <li>Enlace de datos eficaz, con gran compatibilidad con herramientas.</li>
+
+      <li>Compatibilidad con scripting del lado cliente que se ejecuta en el explorador.</li>
+
+      <li>Compatibilidad con diversas funcionalidades, como enrutamiento, seguridad, rendimiento, 
+      internacionalización, pruebas, depuración, control de errores y administración 
+      de estado</li>
+    </ol>
+    </pre>
+    </div>
+    
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2 id="wfc">
+        WCF (Windows Communication Foundation)
+      </h2>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <img src="../IMG/ASP 6.jpg" style="float: right;" width="380px" height="300px">
+     Es un marco para crear aplicaciones orientadas a servicios. 
+     Con WCF, es posible enviar datos como mensajes asincrónicos 
+     de un punto de conexión de servicio a otro. Un extremo de s-
+     ervicio puede formar parte de  un servicio disponible conti
+     nuamente hospedado por IIS, o puede ser un servicio hospeda
+     do en una aplicación. Un extremo puede ser un cliente de un 
+     servicio que solicita datos de un extremo de servicio. Los 
+     mensajes pueden ser tan simples como un carácter o una pala
+     bra que se envía como XML, o tan complejos como una secuencia 
+     de datos binarios
+    </pre>
+
+    <pre>
+      <h3> Fundamentos de WCF</h3>
+     Es un tiempo de ejecución y un conjunto de API para la creación
+     de sistemas que envíen mensajes entre servicios y clientes. La 
+     misma infraestructura y API se utilizan para crear aplicaciones
+     que se comuniquen con otras aplicaciones en el mismo sistema del
+     equipo o en un sistema que resida en otra compañía y a la que se 
+     obtenga acceso a través de Internet.
+     <div style="text-align: center;">
+      <img src="../IMG/ASP 7.jpg" height="300px" width="700px">
+</div>
+    </pre>
+
+    <pre>
+      <h3> Ejemplos de WFC</h3>
+<strong style="color: aquamarine;">
+      * Un servicio seguro para procesar transacciones comerciales.
+
+      * Un servicio que proporciona datos actualizados a otras personas, 
+      como un informe sobre tráfico u otro servicio de supervisión.
+
+      * Un servicio de chat que permite a dos personas comunicarse o intercambiar 
+      datos en tiempo real.
+
+      * Una aplicación de panel que sondea los datos de uno o varios servicios 
+      y los muestra en una presentación lógica.
+
+      * Exponer un flujo de trabajo implementado utilizando Windows Workflow 
+       Foundation como un servicio WC
+    </strong>
+    <div style="text-align: center;">
+    <h3>PARA MAS INFORMACIÓN</h3><hr>
+    <a href="https://learn.microsoft.com/es-es/dotnet/framework/wcf/whats-wcf">HAZ CLIC AQUI</a>
+      </div>
+    </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2>Caracteristicas WFC</h2>
+    </div>
+    
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <strong style="color: cornflowerblue;">
+      * Orientación a servicios
+      * Interoperabilidad
+      * Varios patrones de mensajes
+      * Metadatos de servicios
+      * Contratos de datos
+      * Seguridad
+      * Varios transportes y codificaciones
+      * Mensajes confiables y en cola
+      * Mensajes duraderos
+      * Transactions
+      * Compatibilidad con AJAX y REST
+      * Extensibilidad
+    </strong>
+    </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2 id="mvc">MVC (Modelo-Vista-Controlador)</h2>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      Separa una aplicación en tres componentes principales: el modelo, la vista y el controlador.
+      El marco de MVC de ASP.NET proporciona una alternativa al patrón de ASP.NET Web Forms para 
+      crear aplicaciones web basadas en MVC. El marco de ASP.NET MVC es un marco de presentación 
+      ligero y muy fácil de probar que (como las aplicaciones basadas en Web Forms) se integra con 
+      las características de ASP.NET existentes, tales como páginas maestras y la autenticación ba-
+      sada en pertenencia. El marco de MVC se define en el espacio de nombres de System.Web.Mvc y 
+      es una parte admitida fundamental del espacio de nombres de System.Web.
+      <div style="text-align: center;">
+      <img src="../IMG/ASP 8.jpg" width="600px" height="300">
+    </div>
+    </pre>
+    <pre>
+      <img src="../IMG/ASP 9.jpg" style="float: left;">
+      <strong style="color: brown;">Modelos</strong>. Los objetos modelo son las partes de la aplicación que 
+      implementan la lógica del dominio de datos de la aplicación. A 
+      menudo, los objetos modelo recuperan y almacenan el estado del 
+      modelo en una base de datos. Por ejemplo, un objeto Producto po
+      dría recuperar información de una base de datos, operar en ella 
+      y, después, escribir la información actualizada en una tabla Productos en SQL Server.
+    </pre>
+
+    <pre>
+      <img src="../IMG/ASP 10.jpg" style="float: left;">
+      <strong style="color: brown;">Vistas</strong>. Las vistas son los componentes que muestra la interfaz 
+      de usuario (IU) de la aplicación. Normalmente, esta interfaz de
+      usuario se crea a partir de los datos del modelo. Un ejemplo se-
+      ría una vista de edición de una tabla Productos que muestra cua-
+      dros de texto, listas desplegables y casillas basándose en el estado actual de un objeto Productos
+    </pre>
+
+    <pre>
+      <img src="../IMG/ASP 11.jpg" style="float: left;">
+      <strong style="color: brown;">Controladores</strong>. Los controladores son los componentes que control
+      an la interacción del usuario, trabajan con el modelo y, en últi
+      mo término, seleccionan una vista para representar la interfaz de
+      usuario. En una aplicación de MVC, la vista solo muestra informa
+      ción; el controlador controla y responde a la interacción y los d-
+      atos que introducen los usuarios. Por ejemplo, el controlador adm-
+      inistra los valores de la cadena de consulta y pasa estos valores
+      al modelo, que a su vez los usa para consultar la base de datos.
+    </pre>
+
+    <pre>
+      <h3>Ventajas de una aplicación web basada en MVC</h3>
+      <div style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U487mZI-SAA?si=I18pC6l6yRreExul" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      <strong  style="color: brown; text-align: center;" >
+    <ol>
+    <li>Facilita la administración de la complejidad, al dividir una aplicación 
+    en el modelo, la vista y el controlador.</li>
+    <li>No usa el estado de vista ni formularios basados en servidor.</li>
+    <li>Esto hace que el marco de MVC sea ideal para los desarrolladores que 
+    deseen un control completo sobre el comportamiento de una aplicación.</li>
+    <li>Usa un modelo de controlador frontal que procesa las solicitudes 
+    de la aplicación web mediante un controlador único. Esto permite diseñar 
+    una aplicación que admite una infraestructura de enrutamiento avanzada. </li>
+    <li>Proporciona una mayor compatibilidad con el desarrollo controlado por pruebas (TDD).</li>
+    <li>Funciona bien para las aplicaciones web en las que trabajan equipos 
+    grandes de desarrolladores y para diseñadores web que necesiten un alto
+    grado de control sobre el comportamiento de la aplicación.</li>
+  </ol>  
+</strong>
+
+    </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2>Caracteristicas principales de MVC (Modelo-Vista-Controlador)</h2>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+      <pre style="color: cornflowerblue;">
+        * Separación de tareas de aplicación (lógica de entrada, lógica empresarial y lógica
+        de la interfaz de usuario), facilidad para pruebas y desarrollo basado en pruebas 
+        (TDD) de forma predeterminada
+
+        * Un marco extensible y conectable. Los componentes del marco de MVC de ASP.NET están
+        diseñados para que se puedan reemplazar o personalizar con facilidad. Puede conectar 
+        su propio motor de vista, directiva de enrutamiento de direcciones URL, serialización 
+        de parámetros de método y acción, y otros componentes. 
+
+        * Un eficaz componente de asignación de direcciones URL que permite compilar aplicaci-
+        ones que tienen direcciones URL comprensibles y en las que se pueden buscar.
+
+        * Soporte técnico para usar el marcado en archivos de marcado de páginas de ASP.NET exi-
+        stentes (archivos .aspx), de controles de usuario (archivos .ascx) y de páginas maestr-
+        as (archivos .master) como plantillas de vista.
+
+        * Compatibilidad con las características de ASP.NET existentes. MVC de ASP.NET permite 
+        usar características, tales como la autenticación mediante formularios y la autenticaci-
+        ón de Windows
+      </pre>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h2 id="api">Web API </h2>
+    </div>
+    <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <img src="../IMG/Web 1.png" style="float: right;">
+    Es un Framework que forma parte de ASP.NET MVC y que permite construir APIs
+    habilitadas para REST. Las APIs habilitadas para REST ayudan a que sistemas
+    externos utilicen la lógica de negocios implementada en una aplicación, inc-
+    rementando la reutilización de dicha lógica
+  </pre>
+  <pre>
+    <strong style="color: blueviolet;"> API facilita la comunicación de dos vías entre el cliente y el servidor a través de tareas tales
+    como:</strong>
+    • Indicar a una aplicación realizar una tarea específica.
+    • Leer datos.
+    • Actualizar datos.
+    <div style="text-align: center;">
+    <img src="../IMG/Web 2.png" width="600px" height="300px">
+
+    Web API permite que los desarrolladores obtengan información de negocio mediante 
+    el uso de REST sin crear peticiones XML complicadas tal como en los servicios SO-
+    AP. Web API recibe las peticiones directamente en los URLs eliminando de este modo
+    la necesidad de peticiones complicadas
+    
+    POR EJEMPLO:
+    El siguiente URL obtiene información de una entidad Product con el identificador 1.
+
+    http://northwind.com/api/products/1
+  </div>
+  <img src="../IMG/Web 3.png" style="float: left;" width="450px">
+    Utiliza el URL de las peticiones y obtiene resultados 
+    en formato JSON. JSON es un acrónimo de JavaScript Ob
+    ject Notation y es un formato ligero para intercambio
+    de datos. Para las personas resulta de fácil lectura y
+    escritura mientras que para las máquinas les resulta 
+    fácil analizarlo y generarlo. JSON está basado en un su
+    bconjunto del lenguaje de programación JavaScript. 
+
+    <div style="text-align: center;">
+      El siguiente código muestra una respuesta de una petición Web API en formato JSON:
+      <img src="../IMG/Web 4.png.jpg">
+    </div>
+
+    REST y Web API permiten que todos los diferentes tipos de aplicaciones, incluyendo aplicaciones
+    para dispositivos móviles, interactúen con servicios. En particular, REST y Web API proporcionan los
+    siguientes beneficios para aplicaciones móviles:
+    <div style="text-align: center;">
+      <img src="../IMG/Web 5.png" height="300px">
+    </div>
+    • Reducen el poder de procesamiento necesario para crear mensajes de petición complejos
+    para obtener datos.
+    • Mejoran el rendimiento de la aplicación reduciendo la cantidad de intercambio de datos
+    entre el cliente y el servidor.
+  </pre>
+  </div>
+
+  <div class="container p-5 my-5 bg-dark text-white">
+    <h2 id="signalr">SignalR </h2>
+  </div>
+
+  <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <img src="../IMG/signal 1.jpg" style="float: right;" height="300px" width="400px">
+    Es una biblioteca para los desarrolladores de ASP.NET
+    que simplifica el proceso de agregar funcionalidad web
+    en tiempo real a las aplicaciones. La funcionalidad web
+    en tiempo real es la capacidad de disponer de contenido
+    s de inserción de código de servidor en clientes conect
+    ados al instante, a medida que van estando disponibles,
+    en lugar de que el servidor tenga que esperar que un c-
+    liente solicite nuevos datos.
+  </pre>
+  <pre>
+    Puede utilizarse SignalR para añadir cualquier tipo de funcionalidad web 
+    en tiempo real a una aplicación ASP.NET. Se suele poner como ejemplo el 
+    chat, pero se puede hacer mucho más.
+    <div style="text-align: center;">
+<img src="../IMG/signal3.png" width="600px" height="300px">
+</div>
+    También permite tipos completamente nuevos de aplicaciones web que requi
+    eren actualizaciones de alta frecuencia del servidor, como los juegos en 
+    tiempo real.
+
+    <div style="text-align: center;">
+    Ofrece una API sencilla para crear llamadas de procedimiento remoto (RPC)
+    de servidor a cliente que llaman a funciones JavaScript en exploradores 
+    cliente (y otras plataformas cliente) desde código .NET de servidor. Si-
+    gnalR también incluye API para la administración de conexiones (por ejem-
+    plo, eventos de conexión y desconexión) y la agrupación de conexiones.
+    
+    <img src="../IMG/signal 2.jpg"><hr>
+  </div>
+    SignalR admite la función "server push", con la que el código de servidor
+    puede llamar al código de cliente en el explorador mediante llamadas a pr-
+    ocedimientos remotos (RPC), en lugar del modelo de solicitud-respuesta ha-
+    bitual en la web en la actualidad.
+<div style="text-align: center;">
+<img src="../IMG/signal 4.png">
+</div>
+    Las aplicaciones SignalR se pueden escalar horizontalmente a miles de cli-
+    entes mediante proveedores integrados y de terceros de escalado horizontal.
+
+    Entre los proveedores integrados se encuentran los siguientes:
+
+   * Service Bus
+   * SQL Server
+   * Redis
+
+  
+  </pre>
+  </div>
+
+  <div class="container p-5 my-5 bg-dark text-white">
+    <h2 id="core">ASP.NET Core </h2>
+  </div>
+  <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+    <pre>
+      <img src="../IMG/ASP 12.jpg" height="300px" width="500px " style="float: right;">
+      ASP.NET es un marco de desarrollo web popular 
+      para compilar aplicaciones web en la Plataforma 
+      .NET.Está diseñado para permitir que los compon
+      entes en tiempo de ejecución, las API. Al igual 
+      que el resto de .NET, ASP.NET es de código abie
+      rto en GitHub. .NET tiene más de 100,000 contri
+      buciones y 3,700 empresas ya han contribuido.
+    </pre>
+    <pre>
+      <img src="../IMG/ASP 13.jpg" style="float: left;" width="500px" >
+      Pueden existir varias versiones de
+      ASP.NET Core en paralelo en el mis
+      moservidor. Lo que significa que u-
+      na aplicación puede adoptar la vers
+      ión másreciente, mientras que otra
+      s aplicaciones siguen ejecutándose 
+      en la versión en la que se probaron
+      Al igual que el resto de .NET,ASP.N-
+      ET es de código abiertoen GitHub .NE-
+      T tiene más de 100,000 contribuciones
+      y 3,700 empresas ya han contribuido
+    </pre>
+    <pre>
+      <img src="../IMG/ASP 14.jpg" style="float: left;" width="500px" height="300px">
+      Puede compilar su propia versión de
+      ASP.NET a partir del código fuente, 
+      pero la mayoría de las aplicaciones 
+      de producción necesitan una versión
+      compatible de la plataforma
+    </pre>
+<pre>
+  <img src="../IMG/ASP 15.jpg" style="float: right;" width="500px">
+  El entorno de ejecución de ASP.NET Core en
+  el que se ejecuta la aplicación se puede
+  implementar como parte de la aplicación o
+  instalarse de forma centralizada en el ser
+  vidor web. ASP.NET Core también es perfect
+  amente adecuado para contenedores de Docker.
+</pre><hr>
+  </div>
+  <div class="container p-5 my-5 bg-dark text-white" style="text-align: justify; font-size: 21px;">
+  <h3> Razor</h3>
+  <pre>
+    <img src="../IMG/ASP 16.jpg" style="float: right;" width="500px" height="300px">
+    Es una sintaxis de programación de ASP.NET 
+    utilizada para crear páginas web dinámicas 
+    con los lenguajes de programación de C o V
+    B.NET. Razor se puso en desarrollo en juni
+    o de 2010[4] y fue lanzado para Microsoft 
+    Visual Studio 2010 en enero de 2011.[5] Ra
+    zor es un motor de visión simple de sintax
+    is y fue lanzado como parte de MVC 3 y el 
+    conjunto de herramientas WebMatrix.
+  </pre>
+  <h3>Blazor</h3>
+  <pre>
+    <img src="../IMG/ASP 17.jpg" style="float: right;">
+    Es un marco web de front-end de .NET que a
+    dmite la representación del lado servidor y
+    la interactividad del cliente en un único m
+    odelo de programación:
+
+    * Cree interfaces de usuario interactivas
+     enriquecidas con C#.
+
+    * Comparta la lógica de aplicación del la-
+    do cliente y servidor escrita con .NET.
+
+    * Represente la interfaz de usuario como 
+    HTML y CSS para la compatibilidad con 
+    todos los exploradores, incluidos los móviles.
+
+    * Cree aplicaciones híbridas de escritorio 
+    y móviles con .NET y Blazor.
+
+
+  </pre>
+</div>
+</body>
+</html>

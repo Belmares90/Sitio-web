@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/Yin-Yang-Logo.ico">
+    <link  rel="stylesheet" type="text/css" href="../CSS/Menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Artes Marciales</title>
+</head>
+<body style="color: rgb(172, 9, 9);">
+    <h1 class="titulo">Artes Marciales </h1>
+    <div style="text-align: center;"><img src="../IMG/Yin-Yang-Logo.png" width="400" height="200"></div>
+
+    <h1>PRINCIPALES ARTES MARCIALES </h1>
+    <h1>--------Haz Click en uno de ellos para saber mas-------</h1>
+
+    <table  cellspacing="0px" cellpadding="3px" style="text-align: center;">
+        <tr><th><a href="../Practicas/karate.html" target="_blank" >Karate</a></th>
+            <th><a href="../Practicas/judo.html" target="_blank">Judo</a></th>
+            <th><a href="../Practicas/kendo.html" target="_blank">Kendo</a></th>
+            <th><a href="../Practicas/muaytai.html" target="_blank">Muay Thai</a></th>
+            <th><a href="../Practicas/kungfu.html" target="_blank">kung-fu</a></th>
+
+            <tr><td><img src="../IMG/Karate.jpg" alt="Workplace" usemap="#workmap" width="230" height="280"> </td><td><img src="../IMG/judo.jpg" alt="Workplace" usemap="#workmap2" width="230" height="280"> </td>
+                <td><img src="../IMG/kendo.jpg" alt="Workplace" usemap="#workmap3" width="230" height="280"> </td><td><img src="../IMG/tai.jpg" alt="Workplace" usemap="#workmap4" width="230" height="280"> </td>
+                <td><img src="../IMG/kungfu.jpg" alt="Workplace" usemap="#workmap5" width="230" height="280"> </td></tr>
+
+            <tr></tr>
+        </tr>
+    <!--<div style="text-align: center;"><img src="../IMG/menu.png" width="700" height="300"></div>-->
+    </table>
+
+    <map name="workmap"> 
+        <area shape="default" coords="9,312,237,283" alt="Computer" href="karate.html">
+        
+    </map>
+    
+    <map name="workmap2">
+        <area shape="default" coords="248,312,233,284" alt="Computer" href="judo.html">
+    </map>
+
+    <map name="workmap3">
+        <area shape="default" coords="493,319,219,274" alt="Computer" href="kendo.html">
+    </map>
+
+    <map name="workmap4">
+        <area shape="default" coords="726,317,232,279" alt="Computer" href="muaytai.html">
+    </map>
+
+    <map name="workmap5">
+        <area shape="default" coords="965,317,227,280" alt="Computer" href="kungfu.html">
+    </map>
+<h2>¿Quieres INSCRIBIRTE a un arte marcial?</h2>
+<div class="contenedor">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        HAZ CLIC PARA INCRIBIRTE
+      </button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Formulario para Incribirse</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+        <div class="modal-body">
+            <form>
+            <label from="texto">Nombre:</label><br>
+            <input type="text" id="texto">
+            <br>
+            <label from="texto">Apellidos:</label><br>
+            <input type="text" id="texto">
+            <br>
+            <label from="texto">DNI:</label><br>
+            <input type="text" id="texto">
+            <br>
+            <br>  
+            <select name="genero"><br>
+            <optgroup><br>
+            <option value="sexo" >Sexo</option><br>
+            <option value="hombre">Hombre</option><br>
+            <option value="mujer">Mujer</option><br>
+          </optgroup>
+          </select>
+          <br>
+          <legend>Arte Marcial:</legend>
+        <label for="op1" >Karate</label>
+        <input type="radio" id="op1" value="op1"><br>
+        <label for="op2">Judo</label>
+        <input type="radio" id="op2"><br>
+        <label for="op3">Kendo</label>
+        <input type="radio" id="op3"><br>
+        <label for="op4">Muay-thai</label>
+        <input type="radio" id="op4"><br>
+        <label for="op5">kung-fu</label>
+        <input type="radio" id="op5">
+          <legend>Escribe tu experiencia con las artes marciales</legend>
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+          <input type="submit" name="Enviar" value="Enviar" class="Enviar1">
+        <input type="reset" name="Borrar fomulario" value="Borrar fomulario" class="Enviar1">
+        </form>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

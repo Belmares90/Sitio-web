@@ -1,0 +1,43 @@
+
+
+body {
+    border: 6px solid rgb(66, 65, 62);
+}
+
+
+
+*{
+    font-family: cursive;
+    text-align: center;
+}
+
+.text1{
+    padding: 1%;
+    text-align: justify;
+    background-color: bisque;
+}
+
+.text2{
+    padding: 2%;
+    text-align: justify;
+    background-color: bisque;
+}
+
+.text3{
+    padding: 1%;
+    text-align: justify;
+    background-color:bisque;
+}
+
+h2{
+    border: 5px solid royalblue;
+    border-width: 4px;    
+}
+
+footer {
+    text-align: center;
+    font-size: 150%;
+}
+a{
+    font-size: 60%;
+}

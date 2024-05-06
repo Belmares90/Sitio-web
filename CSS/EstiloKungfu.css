@@ -1,0 +1,42 @@
+*{
+    font-family: cursive;
+    
+}
+
+h2{
+    padding: 2%;
+    text-align: justify;
+    
+    border: 2px solid black;
+}
+
+body{
+    border: 6px solid black;
+    padding: 10%;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+}
+
+pre{
+    padding: 6%;
+    text-align: justify;
+    background-color: blanchedalmond;
+}
+
+
+
+
+.img1{
+    width: 300px;
+    padding: 15px;
+    float: left;
+}
+
+.img2{
+    width: 500px;
+    padding: 15px;
+    float: left;
+}
